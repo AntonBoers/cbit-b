@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pwk-0A-FtE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="X4V-b4-9An">
+            <objects>
+                <viewController id="JR1-Ol-T6O" customClass="LoginViewController" customModule="CBITB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OSd-Lw-cJ6"/>
+                        <viewControllerLayoutGuide type="bottom" id="J5H-sP-Qcp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z60-Dh-rOO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9C-q4-gXl">
+                                <rect key="frame" x="219" y="514" width="163" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="z93-Ox-bK4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Gå til indstillinger"/>
+                                <connections>
+                                    <action selector="Indstillinger:" destination="JR1-Ol-T6O" eventType="touchUpInside" id="Ori-hI-vxG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bilag på farten" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hk-u9-qgK">
+                                <rect key="frame" x="200" y="148" width="201" height="41"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Wpa-kK-y9T"/>
+                                    <constraint firstAttribute="width" constant="201" id="kZ4-7e-cXM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Upload dine billag med et enkelt klik! Direkte fra din telefon." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeV-Sq-6Cq">
+                                <rect key="frame" x="133" y="218" width="334" height="56"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="bXF-VQ-ItR"/>
+                                    <constraint firstAttribute="width" constant="334" id="tyU-I9-qCi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zir-my-Icm">
+                                <rect key="frame" x="230" y="514" width="141" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="hZX-FB-TwG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Gå til kamera"/>
+                                <connections>
+                                    <segue destination="2KS-pb-wYm" kind="unwind" unwindAction="unwindForSegue:towardsViewController:" id="1qH-Ig-x1j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Hk-u9-qgK" firstAttribute="centerX" secondItem="SeV-Sq-6Cq" secondAttribute="centerX" id="1v5-Im-KI8"/>
+                            <constraint firstItem="8Hk-u9-qgK" firstAttribute="centerX" secondItem="Z60-Dh-rOO" secondAttribute="centerX" id="5bq-98-M1V"/>
+                            <constraint firstItem="J5H-sP-Qcp" firstAttribute="top" secondItem="zir-my-Icm" secondAttribute="bottom" constant="56" id="D3s-nE-5y9"/>
+                            <constraint firstItem="8Hk-u9-qgK" firstAttribute="top" secondItem="OSd-Lw-cJ6" secondAttribute="bottom" constant="128" id="ZEM-UW-arS"/>
+                            <constraint firstItem="SeV-Sq-6Cq" firstAttribute="top" secondItem="8Hk-u9-qgK" secondAttribute="bottom" constant="29" id="q0h-RJ-wpV"/>
+                            <constraint firstItem="zir-my-Icm" firstAttribute="centerX" secondItem="SeV-Sq-6Cq" secondAttribute="centerX" id="uKx-GV-n4a"/>
+                            <constraint firstItem="zir-my-Icm" firstAttribute="baseline" secondItem="j9C-q4-gXl" secondAttribute="baseline" id="x47-j8-7ld"/>
+                            <constraint firstItem="j9C-q4-gXl" firstAttribute="centerX" secondItem="zir-my-Icm" secondAttribute="centerX" id="ydm-8O-Cfs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indstillingerButton" destination="j9C-q4-gXl" id="R0J-qM-Ec4"/>
+                        <outlet property="loginButton" destination="zir-my-Icm" id="veO-ya-NHS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ouT-Uo-7qw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2KS-pb-wYm" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="165" y="557"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lxe-sr-bmE">
+            <objects>
+                <viewController id="pwk-0A-FtE" customClass="ViewController" customModule="CBITB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5sQ-rM-mlx"/>
+                        <viewControllerLayoutGuide type="bottom" id="wHs-zf-ATH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qjZ-tP-Fwa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m9H-5Y-OVW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXN-Ra-hOA">
+                                <rect key="frame" x="231" y="550" width="138" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Tag Billede"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="pwk-0A-FtE" eventType="touchUpInside" id="oCq-MF-5xU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m9H-5Y-OVW" firstAttribute="leading" secondItem="qjZ-tP-Fwa" secondAttribute="leading" id="7H9-z5-5Cc"/>
+                            <constraint firstAttribute="trailing" secondItem="m9H-5Y-OVW" secondAttribute="trailing" id="88H-g5-6lC"/>
+                            <constraint firstItem="PXN-Ra-hOA" firstAttribute="centerX" secondItem="m9H-5Y-OVW" secondAttribute="centerX" id="9DS-tj-IEn"/>
+                            <constraint firstItem="wHs-zf-ATH" firstAttribute="top" secondItem="PXN-Ra-hOA" secondAttribute="bottom" constant="17" id="FBv-ZJ-OaB"/>
+                            <constraint firstItem="PXN-Ra-hOA" firstAttribute="top" secondItem="m9H-5Y-OVW" secondAttribute="bottom" constant="53" id="YSg-CP-Ydj"/>
+                            <constraint firstItem="m9H-5Y-OVW" firstAttribute="top" secondItem="qjZ-tP-Fwa" secondAttribute="top" id="mrK-lN-iRu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="m9H-5Y-OVW" id="onu-bO-rFp"/>
+                        <outlet property="tagBillede" destination="PXN-Ra-hOA" id="N9q-Zf-4WO"/>
+                        <segue destination="JR1-Ol-T6O" kind="modal" identifier="camera" id="hhC-Le-Uaq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljw-Tk-GbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="557"/>
+        </scene>
+    </scenes>
+</document>
