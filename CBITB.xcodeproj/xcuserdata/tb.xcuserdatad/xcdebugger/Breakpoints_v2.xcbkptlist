@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CBITB/ViewController.swift"
-            timestampString = "477234831.778395"
+            timestampString = "477305654.230673"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "checkToken()"
             landmarkType = "5">
          </BreakpointContent>

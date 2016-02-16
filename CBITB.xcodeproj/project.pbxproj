@@ -19,8 +19,6 @@
 		332119AE1C63AD5D00C1E591 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 332119AD1C63AD5D00C1E591 /* Settings.bundle */; };
 		333F512A1C4D36630048ABF8 /* globalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333F51291C4D36630048ABF8 /* globalVariables.swift */; };
 		334310231C5273E40055F4BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334310221C5273E40055F4BA /* Main.storyboard */; };
-		33471F071C5FA9B400152A87 /* Pods_CBITB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C8662D5CCE1D7F5E56602C /* Pods_CBITB.framework */; };
-		33471F081C5FA9B400152A87 /* Pods_CBITB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1C8662D5CCE1D7F5E56602C /* Pods_CBITB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,20 +37,6 @@
 			remoteInfo = CBITB;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		33471F091C5FA9B500152A87 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				33471F081C5FA9B400152A87 /* Pods_CBITB.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		330816BE1C722A3B00FD21EB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = ../../../LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,7 +67,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AB3BB06ABFB23FEF36E1B24 /* Pods_CBITB.framework in Frameworks */,
-				33471F071C5FA9B400152A87 /* Pods_CBITB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +174,6 @@
 				3317E84D1C47E3B400B388B9 /* Resources */,
 				DF667E2D0DCBCB2D59F93424 /* Embed Pods Frameworks */,
 				68530801BCBCB056E696D2EE /* Copy Pods Resources */,
-				33471F091C5FA9B500152A87 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -496,7 +478,7 @@
 				INFOPLIST_FILE = CBITB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CBIT-A-S.CBITB";
+				PRODUCT_BUNDLE_IDENTIFIER = "CBIT-A-S.CBITBilag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -511,7 +493,7 @@
 				INFOPLIST_FILE = CBITB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CBIT-A-S.CBITB";
+				PRODUCT_BUNDLE_IDENTIFIER = "CBIT-A-S.CBITBilag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
